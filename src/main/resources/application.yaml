@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: placeforge
+
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/placeforge}
+    username: ${DB_USER:placeforge}
+    password: ${DB_PASSWORD:placeforge123#}
+
+  jpa:
+    hibernate:
+      ddl_auto: update
+    show_sql: true
+    properties:
+      hibernate:
+        format_sql:true
